@@ -32,7 +32,7 @@ const INITIAL_EXPENSE = [
     title: "Phone",
     amount: 18000,
     date: new Date(2019, 3, 18),
-  },
+  }
 ];
 
 function App() {
