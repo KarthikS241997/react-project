@@ -2,7 +2,7 @@ import { useState } from "react";
 import Expenses from "./components/Expenses/Expenses";
 import NewExpense from "./components/NewExpense/NewExpense";
 
-const INITIAL_EXPENSE = [
+const INITIAL_EXPENSES = [
   {
     id: Math.random().toString(),
     title: "Car Insurance",
@@ -36,7 +36,7 @@ const INITIAL_EXPENSE = [
 ];
 
 function App() {
-  const [expenses, setExpenses] = useState(INITIAL_EXPENSE);
+  const [expenses, setExpenses] = useState(INITIAL_EXPENSES);
 
   const addExpenseHandler = (expense) => {
     setExpenses((prevExpenses) => {
